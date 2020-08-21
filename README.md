@@ -1,4 +1,4 @@
-# workspace-manager
+# generation-vuetify
 
 ## Project setup
 ```
