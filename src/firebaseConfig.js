@@ -7,6 +7,8 @@ import "firebase/analytics";
 // Add the Firebase products that you want to use
 import "firebase/firestore";
 
+import "firebase/auth";
+
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -23,9 +25,11 @@ const config = {
 firebase.initializeApp(config);
 
 const db = firebase.firestore()
+const auth = firebase.auth()
 
 const testCollection = db.collection('test')
 
 export {
-    testCollection
+    testCollection,
+    auth,
 }
